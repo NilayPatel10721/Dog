@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "@interactjs/actions": "^1.10.26",
+    "@neodrag/vanilla": "^2.0.3",
+    "interactjs": "^1.10.26"
+  }
+}

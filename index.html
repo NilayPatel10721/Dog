@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./components/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+ 
+    <div class="relative">
+        <body class="bg-gray-100">
+            <header class="absolute h-10 ">    
+                <h1 class="text-5xl py-3 px-5 text-[#EBEDDF] font-semibold">Paw.Dog</h1>
+                
+            </header>
+            <section class="absolute inline-block flex-wrap">
+                <p class="text-white mt-[8rem] px-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nihil. Iste, natus? Iste, placeat doloribus,<br>
+                     sequi repellendus veniam deserunt est et temporibus eaque explicabo rem a reprehenderit, quaerat nihil deleniti?</p>
+            </section>
+        
+        <img src="./components/dog3.jpg" alt="" class="h-[100vh] w-full object-cover">
+
+       <section class="absolute top-[40%] left-[80%] -translate-x-[50%] -translate-y-[50%]">
+        <div class="card2 h-[28rem] w-[23rem]  "> <h1 class=" mt-4 flex justify-center items-center  text-3xl">ભઈલા, મુકી દેને કુતરા ને સુ કામ હેરન કરસ,<br> <br><span class="absolute top-[5rem] mt-[5rem] left-2">"માનસ બાનો"</span> </h1></div>
+       </section>
+        <section class="absolute top-[40%] left-[80%] -translate-x-[50%] -translate-y-[50%]">
+            <div class="card draggable h-[28rem] w-[23rem] flex flex-col items-center" id="drag">
+           
+                <!-- Image Container -->
+                <div class="image mt-[3rem]">
+                    <div class="loader text-[#EBEDDF] text-2xl">Loading...</div>
+                    <img src="" alt="" class="dog-img h-[20rem] w-[16rem] rounded-md object-cover">
+                </div>
+                
+                <!-- Button Container -->
+                <div class="mt-4 flex justify-center items-center space-x-4 fixed top-[80%]">
+                    <!-- Like Button -->
+                    <div id="main-content ">
+                        <div>
+                          <input type="checkbox" id="checkbox" />
+                          <label for="checkbox">
+                            <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                              <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                <path d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" id="heart" fill="#AAB8C2"/>
+                                <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                      
+                                <g id="grp7" opacity="0" transform="translate(7 6)">
+                                  <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                                  <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                                </g>
+                      
+                                <g id="grp6" opacity="0" transform="translate(0 28)">
+                                  <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                                  <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                                </g>
+                      
+                                <g id="grp3" opacity="0" transform="translate(52 28)">
+                                  <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                                  <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                                </g>
+                      
+                                <g id="grp2" opacity="0" transform="translate(44 6)">
+                                  <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                                  <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                                </g>
+                      
+                                <g id="grp5" opacity="0" transform="translate(14 50)">
+                                  <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                                  <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                                </g>
+                      
+                                <g id="grp4" opacity="0" transform="translate(35 50)">
+                                  <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                                  <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                                </g>
+                      
+                                <g id="grp1" opacity="0" transform="translate(24)">
+                                  <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                                  <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                                </g>
+                              </g>
+                            </svg>
+                          </label>
+                          </div>
+                          </div>
+                          
+                    <!-- Next Button -->
+                    <button class="next bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full focus:outline-none focus:ring focus:border-green-300 transition duration-300 ease-in-out">Next</button>
+                    
+                </div>
+             
+            </div>
+        </section>
+        
+        
+        
+        
+    </div>
+    <script src="app.js"></script>
+    <script type="module">
+      import 'https://cdn.interactjs.io/v1.9.20/auto-start/index.js'
+      import 'https://cdn.interactjs.io/v1.9.20/actions/drag/index.js'
+      import 'https://cdn.interactjs.io/v1.9.20/actions/resize/index.js'
+      import 'https://cdn.interactjs.io/v1.9.20/modifiers/index.js'
+      import 'https://cdn.interactjs.io/v1.9.20/dev-tools/index.js'
+      import interact from 'https://cdn.interactjs.io/v1.9.20/interactjs/index.js'
+    
+      const bhaila = document.querySelector('.card2');
+
+// target elements with the "draggable" class
+interact('.draggable')
+  .draggable({
+    // enable inertial throwing
+    inertia: true,
+    // keep the element within the area of its parent
+    modifiers: [
+      interact.modifiers.restrictRect({
+        restriction: 'parent', // Change to another element or 'window' as needed
+        endOnly: true,
+      }),
+    ],
+
+    listeners: {
+      // call this function on every dragmove event
+      move: dragMoveListener,
+
+      // call this function on every dragend event
+      end(event) {
+        // Customize the drag end behavior based on your needs
+        var textEl = event.target.querySelector('p');
+        bhaila.style.display = 'none'
+        textEl && (textEl.textContent =
+          'moved a distance of ' +
+          (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
+                     Math.pow(event.pageY - event.y0, 2) | 0))
+            .toFixed(2) + 'px');
+      },
+    },
+  });
+
+function dragMoveListener(event) {
+  var target = event.target;
+  // keep the dragged position in the data-x/data-y attributes
+  var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+  var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+  // translate the element
+  target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+bhaila.style.display = 'block';
+  // update the position attributes
+  target.setAttribute('data-x', x);
+  target.setAttribute('data-y', y);
+}
+
+// expose the dragMoveListener globally
+window.dragMoveListener = dragMoveListener;
+
+
+
+    </script>
+   
+</body>
+
+
+</html>
